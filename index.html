@@ -1,0 +1,233 @@
+<!-- 
+// Name: Arbaz Imtiyaz Patel
+// ID: 146383211
+// EMAIL: apatel465@myseneca.ca
+// COURSE CODE: WEB222 NFF -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+<header>
+
+    <div class="user">
+        <img src="pictures/img.JPG" alt="My Picture">
+        <h3 class="name">Arbaz Imtiyaz Patel</h3>
+        <p class="post">Web Developer</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a download="Arbaz Patel - RESUME.pdf" href="files/Resume.pdf">Download Resume</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- header section ends -->
+<div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+<!-- home section starts  -->
+<section class="home" id="home">
+    <h3>HI THERE !</h3>
+    <h1>I'M <span>ARBAZ</span></h1>
+    <p>I am an International Student from <span class="color">India</span>. I am studying Advanced Diploma in <span class="color">Computer Programming and Analysis</span> from <span class="color">Seneca College</span>, currently in my second semester, expected to graduate by Sep 2024.</p>
+    <a href="#about"><button class="btn"> About Me <i class="fas fa-user"></i></button></a>
+
+</section>
+<!-- home section ends -->
+
+<!-- about section starts  -->
+<section class="about" id="about">
+<h1 class="heading"> <span>about</span> me </h1>
+<div class="row">
+    <div class="info">
+        <h3> <span> Name : </span> Arbaz Imtiyaz Patel </h3>
+        <h3> <span> Age : </span> 21 </h3>
+        <h3> <span> Email : </span> apatel465@myseneca.ca </h3>
+        <h3> <span> Language : </span> English, Gujarati </h3>
+        <h3> <span> This Course : </span> WEB222 </h3>
+        <h3> <span> Class Section : </span> NFF </h3>
+        <h3> <span> Current Date : </span> Aug 11, 2022 </h3>
+        <h3> <span> Student ID : </span> 146383211 </h3>
+        <h3> <span> Instructor : </span> Mr. Muath Alzghool </h3>
+        <br>
+        <h2><span class="a1">ABOUT MY ACADEMIC HONESTY: </span></h2>
+            <p class="a2">I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.</p>
+            <div class="date">
+                <p><span><strong>Date: </strong></span>Aug 11, 2022</p>
+        </div>
+    </div>
+</div>
+
+</section>
+<!-- about section ends -->
+
+<!-- education section starts  -->
+<section class="education" id="education">
+<h1 class="heading"> My <span>Education</span> </h1>
+<div class="box-container">
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2017 - 2020</span>
+        <h3>High School Student</h3>
+        <p>Completed my Senior Secondary classes from ADITYA BIRLA PUBLIC. Was a skilled Maths and IT student</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>Jan 2022 - Sep 2024</span>
+        <h3>Computer Programming and Analysis</h3>
+        <p>International Student at Seneca College, expected to graduate by Sep 2024</p>
+    </div>
+
+</div>
+
+</section>
+
+<!-- contact  -->
+<section class="contact" id="contact">
+    <h2 class="heading">CONTACT ME</h2>
+    <div class="contact-content">
+        <form action="https://httpbin.org/post" class="contact-form" id="contact-form" method="POST">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" class="name format">
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <!-- email type wasnt used because form is validated using js so it wasn't needed -->
+            <input type="text" name="email" id="email" placeholder="Email address..." class="email format">
+
+            <!-- Address -->
+            <label for="address">Current Address:</label>
+            <textarea name="address" id="address" cols="30" rows="2" placeholder="Enter your full address" class="address"></textarea>
+
+            <!-- Datalist for cities in Canada -->
+            <label for="name">City:</label>
+            <input class="format" type="text" id="city" name="city" list="suggestions" placeholder="Enter your City"/>
+            <datalist id="suggestions">
+                <option label="Barrie" value="Barrie"></option>
+                <option label="Calgary" value="Calgary"></option>
+                <option label="Charlottetown" value="Charlottetown"></option>
+                <option label="Chibougamau" value="Chibougamau"></option>
+                <option label="Chilliwack" value="Chilliwack"></option>
+                <option label="Cold Lake" value="Cold Lake"></option>
+                <option label="Dorval" value="Dorval"></option>
+                <option label="Edmonton" value="Edmonton"></option>
+                <option label="Flin Flon" value="Flin Flon"></option>
+                <option label="Hamilton" value="Hamilton"></option>
+                <option label="Iqualuit" value="Iqualuit"></option>
+                <option label="Ottawa" value="Ottawa"></option>
+                <option label="Miramichi" value="Miramichi"></option>
+                <option label="Montreal" value="Montreal"></option>
+                <option label="Red Deer" value="Red Deer"></option>
+                <option label="Scarborough" value="Scarborough"></option>
+                <option label="St. John" value="St. John"></option>
+                <option label="St. John's" value="St. John's"></option>
+                <option label="Toronto" value="Toronto"></option>
+                <option label="Vancouver" value="Vancouver"></option>
+                <option label="Whitehorse" value="Whitehorse"></option>
+                <option label="Winnipeg" value="Winnipeg"></option>
+                <option label="Yellowknife" value="Yellowknife"></option>
+            </datalist>
+
+            <!-- Postal Code -->
+            <label for="pCode">Postal Code:</label>
+            <input name="Postal_Code" type="text" id="pCode" class="format" placeholder="Postal Code">
+
+            <!-- Purpose of this message -->
+            <br>
+            <div class="radio-btns">
+                <label for="purpose">What is the purpose of this message?</label><br><br>
+                <input type="radio" id="question" name="purpose" value="question">
+                <label for="question">Question</label><br>
+                <input type="radio" id="comment" name="purpose" value="comment">
+                <label for="comment">Comment</label><br>
+                <input type="radio" id="hiring" name="purpose" value="hiring">
+                <label for="hiring">Hiring</label>
+            </div>
+            <br>
+
+            <!-- Message -->
+            <label for="message">Message for me:</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Enter your message..." class="address"></textarea>
+
+            <!-- Field of work selection -->
+            <label for="field">What is your field of work?</label>
+            <select name="field" id="field" size=5>
+                <option value="Engineering, Manufacturing, & Technology" selected>Engineering, Manufacturing, & Technology</option>
+                <option value="Business, Management, & Administration">Business, Management, & Administration</option>
+                <option value="Communications & Information Systems">Communications & Information Systems</option>
+                <option value="Agriculture, Food, & Natural Resources">Agriculture, Food, & Natural Resources</option>
+                <option value="Health Science Technology">Health Science Technology</option>
+                <option value="Human Services">Human Services</option>
+                <option value="Other">Other</option>
+             </select>                       
+
+            <!-- Buttons -->
+            <div class="form-btns">
+                <input type="submit" value="Send" class="btn">
+                <input type="reset" value="Clear" class="btn">
+            </div>
+            <div id="error"></div>
+        </form>
+    </div>
+
+<!-- contact section ends -->
+
+<!-- Footer -->
+<div  class="footer containers" id="footer">
+    <div class="social">
+        <a href="mailto: apatel465@myseneca.ca"><i class='bx bx-envelope'></i></a>
+        <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+        <a href=""><i class='bx bxl-github' ></i></a>
+    </div>
+    <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms and conditions</a>
+    </div>
+
+    <!-- copyright -->
+    <p>&#169; COPYRIGHT arbaz patel</p>
+</div>
+</section>
+
+<!-- scroll top button  -->
+<a href="#home" class="top">
+    <img src="images/scroll-top-img.png" alt="">
+</a>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="scripts/main.js/"></script>
+
+
+</body>
+</html>

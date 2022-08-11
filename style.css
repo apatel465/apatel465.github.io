@@ -1,0 +1,483 @@
+/*  
+Name: Arbaz Imtiyaz Patel
+ID: 146383211
+EMAIL: apatel465@myseneca.ca
+COURSE CODE: WEB222 NFF */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+
+:root{
+    --yellow:#24f2f9; 
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    /* transition: all .2s linear; */
+}
+
+/* *::selection{
+    background:var(--yellow);
+    color:rgb(255, 20, 20);
+} */
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:#222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--yellow);
+}
+
+body{
+    background:rgb(55, 95, 227);
+    overflow-x: hidden;
+    padding-left: 35rem;
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 1024px;
+}
+
+section{
+    min-height: 100vh;
+    padding:1rem;
+}
+
+.btn{
+    padding: 8pt 3rem;
+    background:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    border-radius: 4rem;
+    font-size: 2rem;
+    font-style:normal;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: solid #222;
+}
+
+.btn i{
+    font-size: 2rem;
+}
+
+.btn:hover{
+    background:var(--yellow);
+}
+
+.heading{
+    text-align: center;
+    margin:0 5rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .1rem solid rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
+}
+
+.heading span{
+    color:var(--yellow);
+}
+
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    height:100%;
+    width:35rem;
+    background:#ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height:160px;
+    width:160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border:0.2rem solid rgb(0, 89, 255)
+}
+
+header .user .name{
+    font-size: 3rem;
+    color:rgb(0, 0, 0);
+}
+
+header .user .post{
+    font-size: 2rem;
+    color:rgb(0, 0, 0);
+}
+
+header .navbar{
+    width:85%;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding:1rem 2rem;
+}
+
+.a1 {
+    color: var(--yellow);
+    font-size: 3rem;
+}
+
+.a2 {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.date {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+header .navbar ul li a{
+    font-size: 1.5rem;
+    display:flow-root;
+    padding:1rem;
+    margin:1.5rem 0;
+    background:rgb(14, 106, 203);
+    border-radius: 2.5rem;
+    border: solid #222;
+    color:#fff;
+}
+
+header .navbar ul li a:hover{
+    background:var(--yellow);
+}
+
+.color {
+    color: #222;
+}
+
+.dropbtn {
+    background:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    display:-webkit-inline-flex;
+    position:-ms-page;
+    border-radius: 2rem;
+    border: solid #222;
+  }
+  
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    top:3rem; right:3rem;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 100px;
+    box-shadow: 0px 8px 8px 0px rgba(255, 255, 255, 0.689);
+    font-size: 12pt;
+  }
+  
+  .dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 12px 10px;
+    text-decoration: none;
+    display:grid;
+  }
+  
+  .dropdown-content a:hover {background-color: #2379ce;}
+  
+  .dropdown:hover .dropdown-content {display: grid;}
+  
+  .dropdown:hover .dropbtn {background-color: #0c569b;}
+
+  /* /// */
+.home{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding:0 15rem;
+}
+
+.home h3{
+    font-size: 2.5rem;
+    color:rgb(255, 255, 255);
+}
+
+.home h1{
+    font-size:5rem;
+    color:#fff;
+}
+
+.home h1 span{
+    color:rgb(49, 48, 48);
+}
+
+.home p{
+    font-size:2rem;
+    color:rgb(255, 255, 255);
+    padding: 1rem 0;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row .info{
+    flex:1 1 48rem;
+    padding:2rem 1rem;
+    padding-left: 6rem;
+}
+
+.about .row .info h3{
+    font-size: 2rem;
+    color:var(--yellow);
+    padding:1rem 0;
+    font-weight:bold;
+}
+
+.about .row .info h3 span{
+    color:rgb(255, 255, 255);
+    padding:0 .5rem;
+}
+
+/* .about .row .counter{
+    flex:1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 5rem;
+}
+
+.about .row .counter .box{
+    width:20rem;
+    background:rgb(255, 255, 255);
+    text-align: center;
+    padding: 2rem;
+    margin:2rem;
+    
+}
+
+.about .row .counter .box span{
+    font-size: 4rem;
+    color:var(--yellow);
+}
+
+.about .row .counter .box h3{
+    font-size: 2rem;
+    color:rgb(0, 0, 0);
+} */
+
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+
+.education .box-container .box{
+    width:27rem;
+    margin:4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+
+.education .box-container .box span{
+    font-size: 1.3rem;
+    background:#222;
+    color:#fff;
+    border-radius: 5rem;
+    padding:.5rem 2.5rem;
+}
+
+.education .box-container .box h3{
+    font-size: 2rem;
+    color:#fff;
+    padding-top: 1.5rem;
+}
+
+.education .box-container .box p{
+    font-size: 1.4rem;
+    color:#eee;
+    padding: 1rem 0;
+}
+
+.education .box-container .box i{
+    position: absolute;
+    top:-1.5rem; left:-2.5rem;
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color:#fff;
+    background:var(--yellow);
+}
+
+
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    row-gap: 1rem;
+    color: var(--yellow);
+    font-size: 2rem;
+}
+
+.contact-form input,.contact-form textarea {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    background: white;
+    border-radius: 0.5rem;
+}
+
+.contact-form .contact-btn {
+    width: 200px;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 12px;
+    background: white;
+    cursor: pointer;
+}
+
+.contact-form .contact-btn:hover {
+    background: rgb(63, 63, 203);
+    transition: 0.3s all linear;
+}
+
+.top{
+    position: fixed;
+    bottom:7.5rem; right: 2rem;
+    z-index: 100;
+    display: none;
+}
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1.4rem;
+    padding: 30px o;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+.footer-links {
+    display: flex; 
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.footer-links a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
+
+.footer-links a:hover {
+    color: var(--yellow-color);
+    transition: .3s all linear;
+}
+
+
+
+/* media queries  */
+
+@media (max-width:1200px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .home{
+        padding:1rem 4rem;
+    }
+
+}
+
+@media (max-width:991px){
+
+   header{
+       left:-120%;
+   }
+
+   #menu{
+       display: block;
+   }
+
+   header.toggle{
+    left:0%;
+   }
+
+   body{
+       padding:0;
+   }
+
+}
+
+@media (max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+ 
+ }
+
+@media (max-width:400px){
+
+    header{
+        width: 100vw;
+    }
+
+    .heading{
+        margin:0 3rem;
+    }
+
+    .about .row .counter .box{
+        width: 100%;
+    }
+ 
+    .education .box-container .box{
+        width:100%;
+    }
+
+    .portfolio .box-container .box{
+        width:100%;
+    }
+
+    .contact .row form{
+        margin:3rem 0;
+    }
+
+ }
